@@ -1,0 +1,17 @@
+@font-face {
+  font-family: IMBPlexSerif;
+  src: url(./assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.ttf);
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #f8444c;
+  width: 100%;
+  height: 100vh;
+  font-family: IBMPlexSerif;
+  color: white;
+  font-size: 2em;
+}
+
