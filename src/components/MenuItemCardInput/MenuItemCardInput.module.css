@@ -1,0 +1,4 @@
+.inputForm {
+    display: flex !important;
+    flex-direction: column;
+}
