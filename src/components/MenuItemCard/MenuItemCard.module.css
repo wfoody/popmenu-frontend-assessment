@@ -3,3 +3,16 @@
     src: url(../../assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.ttf);
   }
 
+  .card {
+    background-color: white;
+    color: black;
+    width: 10em;
+    display: flex;
+    flex-direction: row;
+    border-width: 5px;
+    border-color: black;
+    border-radius: 10px;
+    /* margin-left: 10px; */
+    border-style: solid;
+  }
+
