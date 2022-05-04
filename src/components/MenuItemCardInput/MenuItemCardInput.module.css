@@ -1,4 +1,13 @@
 .inputForm {
     display: flex !important;
     flex-direction: column;
+    width: 10em;
 }
+
+.inputDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
