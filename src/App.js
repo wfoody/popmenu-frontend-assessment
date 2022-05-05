@@ -12,7 +12,7 @@ function App() {
       {
         title: 'Glazed Thick-Cut Country Ribs',
         price: 18,
-        description: 'Finger-licking ribs with a Sriracha-spiked barbecue sauce.',
+        description: 'Drizzled with Sriracha-spiked barbecue sauce.',
         imageUrl: '#',
         id: uuid()
       },
@@ -26,7 +26,7 @@ function App() {
       {
         title: 'Penne Napoli',
         price: 15,
-        description: 'Penne with a traditional tomato based sauce with onion, garlic and freshly chopped basil and oregano finished off with a blend of spices.',
+        description: 'Served in a traditional tomato-based sauce with onion, garlic and basil',
         imageUrl: '#',
         id: uuid()
       },
