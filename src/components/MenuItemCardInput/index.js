@@ -10,28 +10,28 @@ const MenuItemCardInput = (props) => {
                     type='text'
                     placeholder='Title'
                     name='title'
-                    onChange={props.handleAddItem}
+                    onChange={(e) => props.handleAddItem(e)}
                     value={props.item.title}
                 />
                 <input
                     type='number'
                     placeholder='Price'
                     name='price'
-                    onChange={props.handleAddItem}
+                    onChange={(e) => props.handleAddItem(e)}
                     value={props.item.price}
                 />
                 <input
                     type='text'
                     placeholder='Description'
                     name='description'
-                    onChange={props.handleAddItem}
+                    onChange={(e) => props.handleAddItem(e)}
                     value={props.item.description}
                 />
                 <input
                     type='text'
                     placeholder='Image URL'
                     name='imageUrl'
-                    onChange={props.handleAddItem}
+                    onChange={(e) => props.handleAddItem(e)}
                     value={props.item.imageUrl}
                 />
                 <button
