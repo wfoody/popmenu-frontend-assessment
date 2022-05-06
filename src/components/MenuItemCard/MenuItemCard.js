@@ -6,12 +6,16 @@ const MenuItemCard = (props) => {
     const price = parseFloat(props.price);
     const formattedPrice = `$${price.toFixed(2)}`
 
+    const addDefaultSrc = (e) => {
+        e.target.src = 'https://static.vecteezy.com/system/resources/thumbnails/005/295/624/small/spoon-and-fork-icon-free-vector.jpg'
+    };
+
     return (
         <div className={styles.cardContainer}>
             {props.editId !== props.id ?
                 <div className={styles.card}>
                     <div>
-                        <img src={ props.imageUrl ? props.imageUrl : 'https://static.vecteezy.com/system/resources/thumbnails/005/295/624/small/spoon-and-fork-icon-free-vector.jpg'} />
+                        <img src={props.imageUrl} onError={addDefaultSrc}/>
                     </div>
                     <div className={styles.textAndButtons}>
                         <div className={styles.text}>
