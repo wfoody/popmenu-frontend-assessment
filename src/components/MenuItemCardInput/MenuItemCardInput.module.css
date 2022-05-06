@@ -28,12 +28,12 @@
     border: 3px solid black;
     border-radius: 8px;
     text-align: center;
-    /* width: 25em; */
 }
 
 .addButton {
     font-family: IBMPlexSerif;
     font-size: 1.2em;
+    margin-top: 1em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -43,7 +43,6 @@
 
     .inputForm input {
         width: 95%;
-
     }
 
 }

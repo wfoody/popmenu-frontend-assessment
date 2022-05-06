@@ -13,42 +13,43 @@ function App() {
         title: 'Glazed Thick-Cut Country Ribs',
         price: 18,
         description: 'Drizzled with Sriracha-spiked barbecue sauce.',
-        imageUrl: '#',
+        imageUrl: 'https://simply-delicious-food.com/wp-content/uploads/2020/06/Sticky-BBQ-ribs-3.jpg',
         id: uuid()
       },
       {
         title: 'Curly Fries',
         price: 5.50,
         description: 'Sliced up curly and fried to perfection.',
-        imageUrl: '#',
+        imageUrl: 'https://www.foodlovinfamily.com/wp-content/uploads/2021/10/frozen-curly-fries-air-fryer.jpg',
         id: uuid()
       },
       {
         title: 'Penne Napoli',
         price: 15,
         description: 'Served in a traditional tomato-based sauce with onion, garlic and basil',
-        imageUrl: '#',
+        imageUrl: 'https://i0.wp.com/torna-a-surriento.co.uk/wp-content/uploads/2020/03/penne-napoli.jpg?fit=487%2C450&ssl=1',
         id: uuid()
       },
       {
         title: 'Salad',
-        price: 12,
+        price: 12.75,
         description: 'Roasted pumpkin and beetroot with mixed lettuce and feta.',
-        imageUrl: '#',
+        imageUrl: 'https://irenamacri.com/wp-content/uploads/2016/06/oregano-chicken-pumpkin-beet-salad-square-5.jpg',
         id: uuid()
       }
     ]
   );
+
+
   const [editId, setEditId] = useState(null);
   const [editingText, setEditingText] = useState({ title: '', price: '', description: '', imageUrl: '', id: uuid() });
-  // const [editingText, setEditingText] = useState(item);
 
 
   const handleAddItem = (e) => {
-    // setMenuList([...menuList]);
     setItem({ ...item, [e.target.name]: e.target.value, id: uuid() });
     console.log(item)
   };
+
 
   const handleSubmit = () => {
     if (item.title && item.price && item.description) {
@@ -60,9 +61,11 @@ function App() {
     console.log(menuList)
   };
 
+
   const handleEditingText = (e) => {
     setEditingText({ ...editingText, [e.target.name]: e.target.value });
-  }
+  };
+
 
   const handleEditSubmit = (id) => {
     const newMenuList = [...menuList].map((item) => {
@@ -79,7 +82,7 @@ function App() {
       console.log(newMenuList)
       alert('Please complete all fields before saving')
     }
-  }
+  };
 
   const handleDelete = (index) => {
     let newMenuList = menuList;
@@ -91,7 +94,7 @@ function App() {
   return (
     <div className={styles.App}>
       <div className={styles.header}>
-        <h1 className={styles.title}>Sweenz Bistro</h1>
+        <h1 className={styles.title}>Sweenz Kitchen</h1>
         <MenuItemCardInput
           item={item}
           setItem={setItem}

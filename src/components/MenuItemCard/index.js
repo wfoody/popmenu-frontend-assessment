@@ -11,7 +11,7 @@ const MenuItemCard = (props) => {
             {props.editId !== props.id ?
                 <div className={styles.card}>
                     <div>
-                        <img src='https://picsum.photos/150' />
+                        <img src={ props.imageUrl ? props.imageUrl : 'https://static.vecteezy.com/system/resources/thumbnails/005/295/624/small/spoon-and-fork-icon-free-vector.jpg'} />
                     </div>
                     <div className={styles.textAndButtons}>
                         <div className={styles.text}>

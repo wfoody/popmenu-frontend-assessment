@@ -13,8 +13,7 @@
   font-family: IBMPlexSerif;
   color: white;
   justify-content: space-around;
-  /* min-height: max-content; */
-  /* font-size: 2em; */
+  padding-bottom: 40%;
 }
 
 .title {
@@ -34,6 +33,5 @@
     text-align: center;
     align-items: center;
   }
-
 }
 
