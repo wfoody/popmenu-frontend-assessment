@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './MenuItemList.module.css';
-import MenuItemCard from '../MenuItemCard';
+import MenuItemCard from '../MenuItemCard/MenuItemCard';
 
 const MenuItemList = (props) => {
     return (

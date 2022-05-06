@@ -1,5 +1,5 @@
 import { render } from '@testing-library/react';
-import MenuItemCard from './index'
+import MenuItemCard from './MenuItemCard'
 
 describe('<MenuItemCard />', () => {
     const mockItem = {title: 'test', price: 3, description: 'testy', imageUrl: '##', id: '1'}
