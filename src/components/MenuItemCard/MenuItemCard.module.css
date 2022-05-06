@@ -18,13 +18,11 @@
 .card {
   background-color: white;
   color: black;
-  /* width: 100%; */
   display: flex;
   flex-direction: row;
   border-width: 3px;
   border-color: black;
   border-radius: 10px;
-  /* margin-left: 10px; */
   border-style: solid;
   margin-bottom: 1em;
   text-align: left;
@@ -34,7 +32,6 @@
 .editCard {
   background-color: white;
   color: black;
-  /* width: 100%; */
   display: flex;
   border-width: 4px;
   border-color: black;
@@ -48,10 +45,11 @@
 .inputForm {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 .inputForm input{
-  width: 10em;
+  width: 100%;
   font-size: 1.4em;
   font-family: IBMPlexSerif;
   border-radius: 8px;
@@ -88,6 +86,8 @@ input.editInput {
 
 img {
   border-radius: 10px;
+  width: 200px;
+  height: auto;
 }
 
 .textAndButtons {
@@ -136,13 +136,13 @@ img {
   font-family: IBMPlexSerif;
 }
 
-@media only screen and (min-width: 650px) and (max-width: 800px) {
+/* @media only screen and (min-width: 650px) and (max-width: 800px) {
   .textAndButtons {
     display: flex;
     flex-direction: column;
   }
 
-}
+} */
 
 @media only screen and (max-width: 800px) {
   .card {
@@ -170,6 +170,7 @@ img {
 
   .inputForm {
     margin-bottom: 1em;
+    width: 97%;
   }
 
   .buttons {
