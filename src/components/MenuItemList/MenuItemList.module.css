@@ -1,7 +1,5 @@
 .menuList {
     display: flex;
     flex-direction: column;
-    padding-left: 5em;
     align-items: center;
-    align-content: center;
-}
+ }

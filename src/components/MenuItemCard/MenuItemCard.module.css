@@ -1,15 +1,27 @@
 @font-face {
-  font-family: IMBPlexSerif;
-  src: url(../../assets/fonts/ibm-plex-serif/IBMPlexSerif-SemiBold.ttf);
+  font-family: IBMPlexSerifBold;
+  src: url(../../ibm-plex-serif/IBMPlexSerif-SemiBold.ttf);
 }
+
+@font-face {
+  font-family: IBMPlexSerifMedium;
+  src: url(../../ibm-plex-serif/IBMPlexSerif-Medium.ttf);
+}
+
+@font-face {
+  font-family: IMBPlexSansItalic;
+  src: url(../../IBM_Plex_Sans/IBMPlexSans-Italic.ttf);
+}
+
+
 
 .card {
   background-color: white;
   color: black;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   flex-direction: row;
-  border-width: 5px;
+  border-width: 3px;
   border-color: black;
   border-radius: 10px;
   /* margin-left: 10px; */
@@ -22,15 +34,35 @@
 .editCard {
   background-color: white;
   color: black;
-  width: 10em;
+  /* width: 100%; */
   display: flex;
-  flex-direction: column;
-  border-width: 5px;
+  border-width: 4px;
   border-color: black;
   border-radius: 10px;
   padding: 1em;
   border-style: solid;
   margin-bottom: 1em;
+  justify-content: space-around;
+}
+
+.inputForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputForm input{
+  width: 10em;
+  font-size: 1.4em;
+  font-family: IBMPlexSerif;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  padding: 4px;
+}
+
+input.editInput {
+  font-size: 1em;
+  font-family:'Courier New', Courier, monospace;
+  height: 2em;
 }
 
 .title {
@@ -41,13 +73,107 @@
 .price {
   font-size: 1.5em;
   padding: 5px;
+  font-family: IBMPlexSerifMedium;
 }
 
 .description {
-  font-size: 1.6em;
+  font-size: 1.4em;
   padding: 5px;
+  font-family: IMBPlexSansItalic;
 }
 
 .cardContainer {
   width: 70%;
+}
+
+img {
+  border-radius: 10px;
+}
+
+.textAndButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.text {
+  width: 60%;
+  margin-left: 2%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+  height: 2.5em;
+  font-family: IBMPlexSerif;
+
+}
+
+.editButton {
+  border-radius: 5px;
+  font-family: IBMPlexSerif;
+  margin-right: 5px;
+}
+
+
+.saveButton {
+  border-radius: 8px;
+  font-family: IBMPlexSerif;
+  margin-right: 5px;
+
+}
+
+.closeButton {
+  border-radius: 5px;
+  font-family: IBMPlexSerif;
+  margin-right: 5px;
+}
+
+.cancelButton {
+  border-radius: 5px;
+  font-family: IBMPlexSerif;
+}
+
+@media only screen and (min-width: 650px) and (max-width: 800px) {
+  .textAndButtons {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .editCard {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .textAndButtons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .description {
+    margin-bottom: 1em;
+  }
+
+  .inputForm {
+    margin-bottom: 1em;
+  }
+
+  .buttons {
+    /* justify-content: space-around; */
+    width: 100%;
+  }
 }
