@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import uuid from 'react-uuid';
 import styles from './App.module.css';
-import MenuItemCardInput from './components/MenuItemCardInput';
-import MenuItemList from './components/MenuItemList';
+import MenuItemCardInput from './components/MenuItemCardInput/MenuItemCardInput';
+import MenuItemList from './components/MenuItemList/MenuItemList';
 
 function App() {
 
