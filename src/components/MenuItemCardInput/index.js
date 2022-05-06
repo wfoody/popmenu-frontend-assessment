@@ -12,6 +12,7 @@ const MenuItemCardInput = (props) => {
                     name='title'
                     onChange={(e) => props.handleAddItem(e)}
                     value={props.item.title}
+                    className={styles.editInput}
                 />
                 <input
                     type='number'
@@ -35,10 +36,11 @@ const MenuItemCardInput = (props) => {
                     value={props.item.imageUrl}
                 />
                 <button
+                    className={styles.addButton}
                     type='button'
                     onClick={props.handleSubmit}
                 >
-                    +
+                    Add New Item
                 </button>
             </form>
         </div>

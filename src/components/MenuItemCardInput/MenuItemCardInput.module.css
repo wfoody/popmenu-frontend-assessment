@@ -1,7 +1,21 @@
-.inputForm {
-    display: flex !important;
+@font-face {
+    font-family: IBMPlexSerif;
+    src: url(../../ibm-plex-serif/IBMPlexSerif-Medium.ttf);
+  }
+
+
+.inputForm input{
+    display: flex;
     flex-direction: column;
-    width: 10em;
+    font-size: 1.4em;
+    font-family: IBMPlexSerif;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    padding: 4px;
+}
+
+.inputForm {
+    width: 100%;
 }
 
 .inputDiv {
@@ -9,5 +23,28 @@
     align-items: center;
     justify-content: center;
     align-content: center;
+    background-color: white;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 8px;
+    text-align: center;
+    /* width: 25em; */
+}
+
+.addButton {
+    font-family: IBMPlexSerif;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 800px) {
+    .inputDiv {
+        width: 60%;
+    }
+
+    .inputForm input {
+        width: 95%;
+
+    }
+
 }
 

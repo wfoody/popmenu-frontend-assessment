@@ -90,15 +90,17 @@ function App() {
 
   return (
     <div className={styles.App}>
-      <h1>Sweenz Bistro</h1>
-      <MenuItemCardInput
-        item={item}
-        setItem={setItem}
-        menuList={menuList}
-        setMenuList={setMenuList}
-        handleAddItem={handleAddItem}
-        handleSubmit={handleSubmit}
-      />
+      <div className={styles.header}>
+        <h1 className={styles.title}>Sweenz Bistro</h1>
+        <MenuItemCardInput
+          item={item}
+          setItem={setItem}
+          menuList={menuList}
+          setMenuList={setMenuList}
+          handleAddItem={handleAddItem}
+          handleSubmit={handleSubmit}
+        />
+      </div>
       <MenuItemList
         editId={editId}
         setEditId={setEditId}
